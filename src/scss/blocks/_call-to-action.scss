@@ -1,0 +1,71 @@
+/* Блок "Готовы начать?" */
+.cta-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.cta-section__content {
+  text-align: center;
+  color: var(--color-white);
+  padding: var(--spacing-2xl) var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #e6a4a4 100%);
+  border-radius: 16px;
+}
+
+.cta-section__title {
+  font-size: 2.2rem;
+  color: var(--color-white);
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+}
+
+.cta-section__subtitle {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    &--primary {
+      background-color: var(--color-accent);
+      color: var(--color-dark);
+
+      &:hover {
+        background-color: #f5d844;
+        color: var(--color-dark);
+      }
+    }
+
+    &--outline {
+      border-color: var(--color-white);
+      color: var(--color-white);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+        border-color: var(--color-white);
+      }
+    }
+  }
+}

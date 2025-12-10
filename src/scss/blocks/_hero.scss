@@ -36,11 +36,18 @@
   }
 }
 
+.hero__subtitle_bold {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
 .hero__subtitle {
   font-size: 1.1rem;
   color: var(--color-dark);
   opacity: 0.8;
   line-height: 1.6;
+  margin: 0;
 }
 
 .hero__free-text {
