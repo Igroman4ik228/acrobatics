@@ -82,35 +82,3 @@ function contactLinks() {
 }
 
 export default contactLinks;
-
-/**
- * ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ:
- *
- * 1. WhatsApp ссылка:
- *    https://wa.me/79990000000?text=Здравствуйте%2C%20хотим%20записаться%20на%20бесплатную%20тренировку
- *
- * 2. Telegram ссылка:
- *    https://t.me/sofiya_coach?text=Здравствуйте%2C%20хотим%20записаться%20на%20бесплатную%20тренировку
- *
- * 3. Альтернативная Telegram ссылка для мобильного:
- *    tg://user?username=sofiya_coach
- *
- * HTML пример:
- *
- * <button class="btn btn--primary cta-button" data-contact-type="whatsapp">
- *     Записаться через WhatsApp
- * </button>
- *
- * <button class="btn btn--secondary cta-button" data-contact-type="telegram">
- *     Написать в Telegram
- * </button>
- *
- * ФОРМАТЫ НОМЕРОВ:
- *
- * WhatsApp:
- * - Российский: 79990000000 (без + и пробелов)
- * - Другие страны: используй код страны без +
- *
- * Telegram:
- * - Username: @sofiya_coach (используй без @)
- */
