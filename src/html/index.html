@@ -53,41 +53,39 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="address=no" />
 
-    <!-- Schema.org разметка для спортивной секции -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsActivityLocation",
-        "name": "Секция акробатики",
-        "description": "Спортивная секция акробатики для детей 3-8 лет",
-        "url": "https://example.com",
-        "telephone": "+7 (910) 976-89-99",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "ул. Спортивная, д. 5",
-          "addressLocality": "Ваш город",
-          "addressRegion": "Ваш регион",
-          "postalCode": "000000",
-          "addressCountry": "RU"
-        },
-        "sameAs": ["https://vk.com/id215177858", "https://t.me/sonyaalekseeva"],
-        "priceRange": "Бесплатно",
-        "image": "./img/og-image.jpg",
-        "areaServed": {
-          "@type": "City",
-          "name": "Ваш город"
-        }
-      }
-    </script>
-
     <!-- Локальные шрифты -->
-    <!-- <link rel="preload" href="./fonts/subset-ChakraPetch-Regular.woff" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="./fonts/fonts.css" media="print" onload="this.media='all'" /> -->
+    <link
+      rel="preload"
+      href="./fonts/SegoeUI-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/SegoeUI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/SegoeUI-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="./css/fonts.css"
+      media="print"
+      onload="this.media='all'"
+    />
 
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- AOS (Animate On Scroll) для анимаций -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./css/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -126,17 +124,5 @@
 
     <!-- JavaScript основной файл -->
     <script src="./js/index.js"></script>
-
-    <!-- AOS инициализация -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        easing: "ease-in-out-quad",
-        once: false,
-        offset: 100,
-        delay: 0,
-      });
-    </script>
   </body>
 </html>
